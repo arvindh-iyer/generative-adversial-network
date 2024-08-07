@@ -75,7 +75,7 @@ def generate_real_samples(x,y,batch_size):
 
 def generate_fake_samples(batch_size):
     x_data=np.random.normal(0,1,size=(batch_size,100))
-    y_data=np.random.randint(0,9,size=(batch_size,1))
+    y_data=np.random.randint(0,10,size=(batch_size,1))
     return x_data,y_data
 
 def save(epoch):
